@@ -12,7 +12,7 @@ cross-build:
 	deno compile --allow-read --allow-write --allow-env --unstable --output era --target aarch64-unknown-linux-gnu src/main.ts
 	tar -czvf era-v${version}-aarch64-linux.tar.gz era
 	deno compile --allow-read --allow-write --allow-env --unstable --output era --target x86_64-apple-darwin src/main.ts
-	tar -czvf era-v${version}-x86_64-apple-darwin.tar.gz era
+	tar -czvf era-v${version}-x86_64-darwin.tar.gz era
 	deno compile --allow-read --allow-write --allow-env --unstable --output era --target aarch64-apple-darwin src/main.ts
-	tar -czvf era-v${version}-aarch64-apple-darwin.tar.gz era
+	tar -czvf era-v${version}-aarch64-darwin.tar.gz era
 	rm era
